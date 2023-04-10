@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            width: 100%;
+            height: 800px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 80px 1fr 1fr 1fr 100px;
+            grid-template-areas:
+                "header header header header header header header header header header header header"
+                "section section section section section section section section sidebar sidebar sidebar sidebar"
+                "section1 section1 section1 section1 section2 section2 section2 section2 sidebar sidebar sidebar sidebar"
+                "section3 section3 section3 section3 section3 section3 section3 section3 sidebar sidebar sidebar sidebar"
+                "footer1 footer1 footer1 footer2 footer2 footer2 footer3 footer3 footer3 footer4 footer4 footer4"
+            ;
+        }
+
+        .header {
+            background-color: #9c9b9b;
+            grid-area: header;
+            text-align: center;
+            padding: 20px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .section {
+            grid-area: section;
+            background-color: #e9e2d9;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section1 {
+            grid-area: section1;
+            background-color: #e9e2d9;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        .subsection1 {
+            height: 100%;
+            width: 100%;
+            background-color: #e2b278;
+            padding: 20px;
+        }
+
+        .section2 {
+            grid-area: section2;
+            background-color: #e9e2d9;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .subsection2 {
+            height: 100%;
+            width: 100%;
+            background-color: #e2b278;
+            padding: 20px;
+        }
+
+        .section3 {
+            grid-area: section3;
+            background-color: #e9e2d9;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subsection3 {
+            height: 100%;
+            width: 100%;
+            background-color: #e2b278;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #80b680;
+            font-size: larger;
+            font-weight: bolder;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer1 {
+            background-color: #9c9b9b;
+            grid-area: footer1;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subfooter1 {
+            height: 90%;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+        }
+
+
+        .footer2 {
+            background-color: #9c9b9b;
+            grid-area: footer2;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subfooter2 {
+            height: 90%;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .footer3 {
+            background-color: #9c9b9b;
+            grid-area: footer3;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subfooter3 {
+            height: 90%;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .footer4 {
+            background-color: #9c9b9b;
+            grid-area: footer4;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subfooter4 {
+            height: 90%;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">[Шапка страницы]</header>
+        <div class="section">[Основная часть]</div>
+        <div class="section1">
+            <div class="subsection1">[Еще 1]
+            </div>
+        </div>
+        <div class="section2">
+            <div class="subsection2">[Еще 2]
+            </div>
+        </div>
+        <div class="section3">
+            <div class="subsection3">[Еще 3]
+            </div>
+        </div>
+        <aside class="sidebar">[Боковая часть]</aside>
+
+        <div class="footer1">
+            <div class="subfooter1">[Секция футера 1]</div>
+        </div>
+        <div class="footer2">
+            <div class="subfooter2">[Секция футера 2]</div>
+        </div>
+        <div class="footer3">
+            <div class="subfooter3">[Секция футера 3]</div>
+        </div>
+        <div class="footer4">
+            <div class="subfooter4">Секция футера 4]</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
